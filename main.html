@@ -3,12 +3,59 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+<!-- the entire body must be written by student -->
+<!--Name*
+Email*
+Gender*(radio)
+Laptop Brands(options : [Apple, Asus, HP])
+Age*
+DOB*
+Password*
+submit button -->
+<form action="backend.php">
+<div><label for="name">Name</label>
+<input type="text" name="name" id="#name" required>
+</div><br>
+<div><label for="email">Email</label>
+<input type="email" name="email" id="#email" required>
+</div><br>
+<div><label for="gender">Gender &nbsp; </label>
+<input type="radio" name="gender" id="#gender" required>Male
+<input type="radio" name="gender" id="#gender" required>Female
+<!-- <input type="radio" name="gender" id="#gender" required>Other-->
+</div><br>
+<div>
+<label for="laptop">Laptop Brands</label>
+<select name="laptop" id="#laptop">
+<!--<option value="Select" selected>*select*</option>-->
+<option value="Apple">Apple</option>
+<option value="Asus">Asus</option>
+<option value="HP">HP</option>
+</select>
+</div><br>
+<div>
+<label for="age">Age</label>
+<input type="number" name="age" id="#age" required>
+</div><br>
+<div>
+<label for="dob">DOB</label>
+<input type="date" name="dob" id="#dob" required>
+</div><br>
+<div>
+<label for="password">Password</label>
+<input type="password" name="password" id="#password" required>
+</div><br>
+<div><label for="portfolio">Portfolio</label>
+<input type="url" name="portfolio" id="#portfolio">
+</div><br>
+<input type="submit" value="Submit">
+</div>
+</form>
+<script type="text/javascript" src="./script.js">
 </script>
 
 </body>
