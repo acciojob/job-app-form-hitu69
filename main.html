@@ -3,62 +3,56 @@
 <html>
 
 <head>
-<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-<!-- the entire body must be written by student -->
-<h1>Job App Form</h1>
-<form method="post">
-<div>
-<label for="name"><b>Name* :</b></label>
-<input type="text" required id="name">
-</div>
-<br>
-<div>
-<label for="email"><b>Email* :</b></label>
-<input type="email" required id="email">
-</div>
-<br>
-<div>
-<label for="gender"><b>Gender* :</b></label>
-<input type="radio" name="gender" required id="gender">Male
-<input type="radio" name="gender" required id="gender">Female
-</div>
-<br>
-<div>
-<label for="laptop"><b>Laptop Brands :</b></label>
-<select id="laptop">
-<option value="apple">Apple</option>
-<option value="asus">Asus</option>
-<option value="hp">HP</option>
-</select>
-</div>
-<br>
-<div>
-<label for="age"><b>Age* :</b></label>
-<input type="number" required id="age">
-</div>
-<br>
-<div>
-<label for="dob"><b>DOB* :</b></label>
-<input type="date" required id="dob">
-</div>
-<br>
-<div>
-<label for="password"><b>Password* :</b></label>
-<input type="password" required id="password">
-</div>
-<br>
-<div>
-<label for="portfolio"><b>Portfolio :</b></label>
-<input type="url" required id="portfolio">
-</div>
-<br>
-<button type="submit" style="box-sizing: border-box;"><b>submit button</b></button>
-</form>
-<script type="text/javascript" src="./script.js">
+	<!-- the entire body must be written by student -->
+    <script type="text/javascript" src="./script.js">
 </script>
+	<section>
+		<form method="post">
+	 <label for="name">Name*</label>
+	 <input type="text" name="name" id="name" required><br>
+	
+	 <label for="eamil">Email*</label>
+	<input type="email" name="email" id="email" required><br>
+
+	<label for="gender">Gender*</label><br>
+	<label for="gender">Male</label>
+	<input type="radio" name="gender" id="gender" required>
+	<label for="gender">Female</label>
+	<input type="radio" name="gender" id="gender" required><br>
+	
+
+	<label for="laptops">Laptop Brands</label>
+	<select id="laptops">
+		<option disabled select>options:</option>
+		<option value="Apple">Apple</option>
+		<option value="Asus">Asus</option>
+		<option value="HP">Hap</option>
+	</select><br>
+	
+	<label for="age">Age*</label>
+	<input type="text" name="age" id="age" required><br>
+
+	<label for="dob">DOB*</label>
+	<input type="date" name="dob" id="dob" required><br>
+	
+	<label for="password">Password*</label>
+	<input type="password" name="password" id="password" required><br>
+
+	<label for="portfolio">Portfolio URL</label>
+		<input type="url" id="porrfolio" name="portfolio"><br>
+    
+<!-- 		<input type="button" id="sumbit" value="submit">-->
+	<button value="sumbit" id="submit">submit</button>
+		
+	</form>
+		
+	</section>
+	
+	
 
 </body>
 
